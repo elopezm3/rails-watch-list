@@ -1,0 +1,5 @@
+<%= form_with model: @list do |f| %>
+  <%= f.label :name, "List name" %>
+  <%= f.text_field :name %>
+  <%= f.submit "Add new list" %>
+<% end %>

@@ -1,0 +1,6 @@
+<div class="main-banner">
+  <h1>My movies lists</h1>
+</div>
+<p><% @lists.each do |list| %></p>
+  <%=link_to list.name, list_path(list) %> <!--Add this to a card that has the background image of a list.movies[1]-->
+<% end %>

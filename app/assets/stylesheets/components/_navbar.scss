@@ -1,0 +1,25 @@
+.navbar-movies {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+
+.navbar-movies .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-movies .navbar-brand img {
+  width: 40px;
+}
+
+.navbar-options {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo {
+  width:40px;
+}
