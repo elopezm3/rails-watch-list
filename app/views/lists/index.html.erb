@@ -1,6 +1,10 @@
 <div class="main-banner">
   <h1>My movies lists</h1>
 </div>
-<p><% @lists.each do |list| %></p>
-  <%=link_to list.name, list_path(list) %> <!--Add this to a card that has the background image of a list.movies[1]-->
-<% end %>
+<div class="cards">
+  <% @lists.each do |list| %>
+    <div class="list-card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%=cl_image_path list.photo.key%>')">
+      <h2><%=link_to list.name, list_path(list) %></h2>
+    </div>
+  <% end %>
+</div>

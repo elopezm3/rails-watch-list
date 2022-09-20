@@ -1,5 +1,8 @@
-<%= form_with model: @list do |f| %>
+<div class="form">
+  <%= simple_form_for @list do |f| %>
   <%= f.label :name, "List name" %>
   <%= f.text_field :name %>
-  <%= f.submit "Add new list" %>
+  <%= f.input :photo, as: :file %>
+  <%= f.submit "Add new list", class: "btn btn-primary" %>
 <% end %>
+</div>
