@@ -1,0 +1,5 @@
+production:
+  cloud_name: "cloudinary"
+  api_key: "572885484182997"
+  api_secret: "gexTxr_L92_lD24HqSMQzVkJGmA"
+  secure: true
